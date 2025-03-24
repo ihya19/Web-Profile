@@ -1,0 +1,12 @@
+.profile {
+    padding: 3rem 1rem;
+    background-color: #5a3ea6;
+    color: white;
+    text-align: center;
+  }
+  
+  .profile h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  

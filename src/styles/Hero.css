@@ -1,0 +1,21 @@
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #6b46c1;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .hero button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #6b46c1;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+  }
+  

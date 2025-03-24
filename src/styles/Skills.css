@@ -1,0 +1,41 @@
+.skills {
+    padding: 2.5rem 1rem;
+    background: white;
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  .skills .skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skills .skill {
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .skills .javascript {
+    background: #f7df1e;
+  }
+  
+  .skills .react {
+    background: #61dafb;
+  }
+  
+  .skills .node {
+    background: black;
+    color: white;
+  }
+  
+  .skills .vscode {
+    background: #007acc;
+    color: white;
+  }
+  
