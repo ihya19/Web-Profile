@@ -1,41 +1,78 @@
 .skills {
-    padding: 2.5rem 1rem;
-    background: white;
-    text-align: center;
-  }
-  
-  .skills h2 {
-    font-size: 1.75rem;
-    font-weight: bold;
-  }
-  
-  .skills .skill-list {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .skills .skill {
-    padding: 1rem;
-    border-radius: 5px;
-  }
-  
-  .skills .javascript {
-    background: #f7df1e;
-  }
-  
-  .skills .react {
-    background: #61dafb;
-  }
-  
-  .skills .node {
-    background: black;
-    color: white;
-  }
-  
-  .skills .vscode {
-    background: #007acc;
-    color: white;
-  }
-  
+  padding: 2.5rem 1rem;
+  background: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.skills h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1%;
+  margin-bottom: 35px;
+  color: #333;
+}
+
+.skill-boxes {
+  display: flex;
+  gap: 35px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.skill-column {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.skill {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  width: 250px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+}
+
+.javascript {
+  background: #f7df1e;
+  color: #000;
+}
+
+.react {
+  background: #61dafb;
+  color: #000;
+}
+
+.node {
+  background: #339933;
+  color: white;
+}
+
+.vscode {
+  background: #007acc;
+  color: white;
+}
+
+.figma {
+  background: #f24e1e;
+  color: white;
+}
+
+.recording {
+  background: #ff4d4d;
+  color: white;
+}

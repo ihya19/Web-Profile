@@ -1,24 +1,116 @@
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .container {
-    max-width: 1200px; 
-    width: 100%; 
-    margin: 0 auto;  
-    padding: 20px;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .hero {
-    width: 100%;
-    max-width: 100%;
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: linear-gradient(to right, #4731D3 65%, #CBF281 35%);
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.skills {
+  background: white;
+  text-align: center;
+}
+
+.skill-boxes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.projects {
+  background: #c6f6d5;
+  text-align: center;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.profile {
+  background-color: #5a3ea6;
+  color: white;
+}
+
+.profile-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+  display: flex;
+  gap: 2rem;
+}
+
+footer {
+  background: white;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+@media (max-width: 1440px) {
+  .hero-content,
+  .skill-boxes,
+  .projects-container,
+  .profile-content,
+  .footer-content {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content,
+  .skill-boxes,
+  .projects-container,
+  .profile-content,
+  .footer-content {
+    padding: 0 30px;
   }
   
+  .profile-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content,
+  .skill-boxes,
+  .projects-container,
+  .profile-content,
+  .footer-content {
+    padding: 0 15px;
+  }
+}

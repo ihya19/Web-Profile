@@ -1,12 +1,17 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 import "../styles/Footer.css";
-import "../styles/global.css"; 
+import "../styles/global.css";
 
-const Footer = () => (
-  <footer className="container">
-    <p>Send me a message!</p>
-    <p>myemail@example.com</p>
-  </footer>
-);
+const Footer = () => {
+  const { language } = useLanguage();
+
+  return (
+    <footer className="container">
+      <p>{language === "tr" ? "Bana bir mesaj gönder!" : "Send me a message!"}</p>
+      <p>ihyasahin@gmail.com</p>
+    </footer>
+  );
+};
 
 export default Footer;
