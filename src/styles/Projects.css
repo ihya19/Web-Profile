@@ -1,16 +1,18 @@
-.projects-bg {
+
+.projects-section {
   background: #CBF281;
   width: 100%;
   padding: 80px 0;
+  min-height: 100vh;
 }
 
-.projects {
+.projects-container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.projects h2 {
+.projects-container h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -24,52 +26,89 @@
 
 .projects-grid {
   display: grid;
-  gap: 16px;
+  gap: 24px;
 }
 
 .project-card {
   background: #FFFFFF;
   border-radius: 12px;
-  padding: 24px;
-  text-align: left;
+  padding: 32px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
   font-size: 24px;
   font-weight: 700;
+  color: #18274B;
   margin-bottom: 16px;
 }
 
-.project-card p {
-  margin-bottom: 16px;
+.project-description {
   color: #383838;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 .project-tags {
   display: flex;
   gap: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 
 .tag {
   background: #4731D3;
   color: white;
-  padding: 4px 8px;
+  padding: 4px 12px;
   border-radius: 4px;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .project-links {
   display: flex;
-  gap: 16px;
 }
 
-.link {
+.github-link {
   color: #4731D3;
   font-weight: 600;
   text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #4731D3;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.link:hover {
-  text-decoration: underline;
+.github-link:hover {
+  background: #4731D3;
+  color: white;
+}
+
+.dark .projects-section {
+  background: #1A210B;
+}
+
+.dark .project-card {
+  background: #2D2D2D;
+}
+
+.dark .project-card h3,
+.dark .project-description {
+  color: #FFFFFF;
+}
+
+.dark .tag {
+  background: #CBF281;
+  color: #1A210B;
+}
+
+.dark .github-link {
+  color: #CBF281;
+  border-color: #CBF281;
+}
+
+.dark .github-link:hover {
+  background: #CBF281;
+  color: #1A210B;
 }

@@ -17,10 +17,10 @@ const Hero = () => {
             <h1 className="hero-header-title">İhya</h1>
             <div className="hero-header-controls">
               <button onClick={toggleLanguage} className="language-toggle">
-                {language === "tr" ? "EN" : "TR"}
+                {language === "tr" ? "İNGİLİZCE'YE GEÇ" : "TÜRKÇE'YE GEÇ"}
               </button>
               <button onClick={toggleTheme} className="theme-toggle">
-                {theme === "dark" ? "🌞" : "🌙"}
+                {theme === "dark" ? "🌞 DARK MODE" : "🌙 LIGHT MODE"}
               </button>
             </div>
           </header>

@@ -7,10 +7,17 @@ const Footer = () => {
   const { language } = useLanguage();
 
   return (
-    <footer className="container">
-      <p>{language === "tr" ? "Bana bir mesaj gönder!" : "Send me a message!"}</p>
-      <p>ihyasahin@gmail.com</p>
-    </footer>
+    <div className="footer-bg">
+      <div className="footer-content">
+        <h2>{language === "tr" ? "Bana bir mesaj gönder!" : "Send me a message!"}</h2>
+        <p>
+          {language === "tr" 
+            ? "Bir sorunuz, öneriniz varsa veya sadece merhaba demek istiyorsanız, çekinmeyin." 
+            : "Got a question or proposal, or just want to say hello? Go ahead."}
+        </p>
+        <a href="mailto:ihyasahin@gmail.com">ihyasahin@gmail.com</a>
+      </div>
+    </div>
   );
 };
 
