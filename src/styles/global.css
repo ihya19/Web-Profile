@@ -1,3 +1,25 @@
+:root {
+  --primary-bg: white;
+  --primary-text: #4731D3;
+  --accent-color: #4731D3;
+  --secondary-color: #CBF281;
+  --footer-bg: #F9F9F9;
+  --footer-text: #120B39;
+  --footer-link: #4731D3;
+  --footer-heading: inherit;
+}
+
+.dark-mode {
+  --primary-bg: white;
+  --primary-text: #CBF281;
+  --accent-color: #171043;
+  --secondary-color: #1A210B;
+  --footer-bg: #1A1A2E;
+  --footer-text: #EAEAEA;
+  --footer-link: #CBF281;
+  --footer-heading: #CBF281;
+}
+
 
 body {
   margin: 0;
@@ -7,6 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
 }
 
 .main-container {
@@ -24,93 +48,20 @@ body {
   box-sizing: border-box;
 }
 
-.hero {
-  background: linear-gradient(to right, #4731D3 65%, #CBF281 35%);
-  width: 100%;
-}
-
-.hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 120px;
-}
-
-.skills {
-  background: white;
-  text-align: center;
-}
-
-.skill-boxes {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 120px;
-}
-
-.projects {
-  background: #c6f6d5;
-  text-align: center;
-}
-
-.projects-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 120px;
-}
-
-.profile {
-  background-color: #5a3ea6;
-  color: white;
-}
-
-.profile-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 120px;
-  display: flex;
-  gap: 2rem;
-}
-
-footer {
-  background: white;
-  text-align: center;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 120px;
-}
-
 @media (max-width: 1440px) {
-  .hero-content,
-  .skill-boxes,
-  .projects-container,
-  .profile-content,
-  .footer-content {
+  .hero-content, .skill-boxes, .projects-container, .profile-content, .footer-content {
     padding: 0 60px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-content,
-  .skill-boxes,
-  .projects-container,
-  .profile-content,
-  .footer-content {
+  .hero-content, .skill-boxes, .projects-container, .profile-content, .footer-content {
     padding: 0 30px;
-  }
-  
-  .profile-content {
-    flex-direction: column;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-content,
-  .skill-boxes,
-  .projects-container,
-  .profile-content,
-  .footer-content {
+  .hero-content, .skill-boxes, .projects-container, .profile-content, .footer-content {
     padding: 0 15px;
   }
 }

@@ -12,7 +12,7 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
-    document.documentElement.setAttribute("data-theme", theme);
+    document.body.className = theme === "dark" ? "dark-mode" : "";
   }, [theme]);
 
   const toggleTheme = () => {
