@@ -2,6 +2,7 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import "../styles/Profile.css";
 import "../styles/global.css";
+import profileImage from "/images/images.jpeg";
 
 const Profile = () => {
   const { language } = useLanguage();
@@ -22,15 +23,15 @@ const Profile = () => {
               <li><span>{language === "tr" ? "Tercih Ettiği Rol" : "Preferred Role"}</span> {language === "tr" ? "Frontend, UI" : "Frontend, UI"}</li>
             </ul>
           </div>
-
-          <div className="divider"></div>
+          
+          <img src={profileImage} alt="Profile" className="profile-image" />
 
           <div className="about-me">
             <h3>{language === "tr" ? "Hakkımda" : "About Me"}</h3>
             <p>
               {language === "tr" 
-                ? "Lorem ipsum, dolor sit amet consectetur adipisicing elit.\nVeniam aut, odit laborum aliquam voluptatum nisi mollitia.\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
-                : "Lorem ipsum, dolor sit amet consectetur adipisicing elit.\nVeniam aut, odit laborum aliquam voluptatum nisi mollitia.\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"}
+                ? "Bursa Teknik Üniversitesi Elektrik & Elektronik Mühendisliği bölümünden mezun oldum. BTÜ'de topluluklarda sosyal becerilerimi geliştirdim. Siemens PLC, SQL, C#, Python ve Pandas  gibi teknolojilerde yetkinlik kazandım. Yazılım alanında, özellikle frontend ve UI tasarımına ilgi duyarak kullanıcı deneyimi odaklı arayüzler geliştirmeye odaklanıyor, gelişime açık biri olarak kendimi sürekli güncellemeye çalışıyorum.\n\n"
+                : "I graduated from the Electrical & Electronics Engineering Department at Bursa Technical University. I developed my social skills through participation in student communities at BTU. I gained expertise in technologies such as Siemens PLC, SQL, C#, Python, and Pandas. In the software field, I am particularly interested in frontend and UI design, focusing on developing user experience-centered interfaces, and as a person open to development, I constantly strive to update myself."}
             </p>
           </div>
         </div>

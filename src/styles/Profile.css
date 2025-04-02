@@ -18,34 +18,31 @@
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 1%;
-  
   text-align: left;
   width: 198px;
-  color: var(--secondary-color);
+  color: #CBF281; /* Updated color */
 }
 
 .profile-content {
   display: flex;
-  width: 960px;
-  min-height: 290.68px;
-  margin: 0 auto;
+  width: 100%;
   gap: 30px;
-  
   border-radius: 8px;
+  align-items: center; /* Vertically center the content */
 }
 
-.basic-info {
+.basic-info,
+.about-me {
   flex: 1;
-  padding-right: 15px;
 }
 
-.basic-info h3, 
+.basic-info h3,
 .about-me h3 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 24px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* Removed border-bottom to eliminate the lines */
 }
 
 .basic-info ul {
@@ -74,16 +71,18 @@
   margin: 0 15px;
 }
 
-.about-me {
-  flex: 1;
-  padding-left: 15px;
-}
-
 .about-me p {
   white-space: pre-line;
   line-height: 1.6;
   font-size: 18px;
   margin: 0;
+}
+
+.profile-image {
+  width: 300px;
+  height: auto; /* Adjust height dynamically based on content */
+  border-radius: 10px;
+  object-fit: cover; /* Ensure image maintains aspect ratio */
 }
 
 @media (max-width: 1200px) {

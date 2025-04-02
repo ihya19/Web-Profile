@@ -17,7 +17,7 @@ const Hero = () => {
             <h1 className="hero-header-title">İhya</h1>
             <div className="hero-header-controls">
               <button onClick={toggleLanguage} className="language-toggle">
-                {language === "tr" ? "İNGİLİZCE'YE ÇEVİR" : "TÜRKÇE'YE ÇEVİR"}
+                {language === "tr" ? "TRANSLATE TO ENGLISH" : "TÜRKÇE'YE ÇEVİR"}
               </button>
               <div className="theme-toggle-container">
                 <input
@@ -35,16 +35,14 @@ const Hero = () => {
 
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="hero-name-title">I am a frontend developer...</h1>
-              <h2 className="hero-subtitle">
-                {language === "tr" 
+              <h1 className="hero-name-title">{language === "tr" 
                   ? "Frontend Geliştiriciyim..." 
-                  : "I am a Frontend Developer..."}
-              </h2>
+                  : "I am a Frontend Developer..."}</h1>
+              
               <p className="hero-description">
                 {language === "tr"
-                  ? "Sağlam ve ölçeklenebilir arayüzler geliştirmeyi seviyorum."
-                  : "I love building solid and scalable frontend products."}
+                  ? "...harika kullanıcı deneyimine sahip ölçeklenebilir ön uç ürünleri tasarlamayı seven."
+                  : "...who likes to craft and scalable frontend products with great user experience."}
               </p>
               <div className="hero-social-buttons">
                 <a 

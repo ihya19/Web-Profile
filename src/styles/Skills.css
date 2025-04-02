@@ -1,11 +1,12 @@
 .skills {
   padding: 2.5rem 1rem;
-  background: white;
-  text-align: center;
+  background: var(--bg-color);
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease;
 }
 
 .skills h2 {
@@ -14,13 +15,18 @@
   line-height: 100%;
   letter-spacing: 1%;
   margin-bottom: 35px;
-  color: #333;
+  text-align: left;
+  width: 128px;
+  height: 58px;
+  color: #4832D3;
+  margin-left: 240px;
 }
 
 .skill-boxes {
   display: flex;
   gap: 35px;
-  width: fit-content;
+  width: 100%;
+  justify-content: center;
   height: fit-content;
 }
 
@@ -28,51 +34,55 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+  align-items: center;
 }
 
 .skill {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   padding: 1rem 1.5rem;
   border-radius: 8px;
   font-weight: 700;
   width: 250px;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
+  background: transparent;
+  color: var(--text-color);
+}
+
+.skill img {
+  width: 120px;
+  height: 120px;
+}
+
+.skill span {
+  width: 81px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
 }
 
 .skill:hover {
   transform: translateY(-3px);
 }
 
-.javascript {
-  background: #f7df1e;
-  color: #000;
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --skill-bg: transparent;
+  --accent-color: #6a5acd;
 }
 
-.react {
-  background: #61dafb;
-  color: #000;
-}
-
-.node {
-  background: #339933;
-  color: white;
-}
-
-.vscode {
-  background: #007acc;
-  color: white;
-}
-
-.figma {
-  background: #f24e1e;
-  color: white;
-}
-
-.recording {
-  background: #ff4d4d;
-  color: white;
+.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: white;
+  --skill-bg: transparent;
+  --accent-color: #a8ff78;
 }
